@@ -15,6 +15,7 @@ include "header.php";
         <th>Course</th>
          <th>Price</th>
         <th>Trainer</th>
+        <th>Action</th>
         </thead>
         <tbody>
             <?php 
@@ -26,6 +27,9 @@ include "header.php";
                 <td><?php echo $course['c_name']; ?></td>
                 <td><?php echo $course['c_price']; ?></td>
                 <td><?php echo $course['t_name']; ?></td>
+                <td>
+                    <a href="updatecourse.php?courseid=<?php echo $course['c_id']; ?>">Update</a>
+                </td>
             </tr>
             <?php } ?>
         </tbody>

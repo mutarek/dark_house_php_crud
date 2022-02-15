@@ -15,6 +15,7 @@ include "header.php";
         <th>Name</th>
          <th>Number</th>
         <th>Address</th>
+        <th>Action</th>
         </thead>
         <tbody>
             <?php
@@ -25,6 +26,9 @@ include "header.php";
                 <td><?php echo $trainer['t_name']; ?></td>
                 <td><?php echo $trainer['t_number']; ?></td>
                 <td><?php echo $trainer['t_address']; ?></td>
+                <td>
+                    <a href="updatetrainer.php?t_id=<?php echo $trainer['t_id']; ?>">Update</a>
+                </td>
             </tr>
            <?php } ?> 
         </tbody>
